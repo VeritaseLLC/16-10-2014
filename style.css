@@ -1,0 +1,379 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "Helvetica Light";
+    src: url("font/helvetica-light-587ebe5a59211.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Helvetica Bold";
+    src: url("font/Helvetica-Bold.ttf");
+}
+
+@font-face {
+    font-family: "Helvetica Neue";
+    src: url("font/HelveticaNeueLight.otf");
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    :root {
+        scroll-behavior: smooth;
+    }
+}
+
+:root {
+    --Primary-Font: "Helvetica Light";
+    --Secondary-Font: "Helvetica Bold";
+    --Third-Font: "Helvetica Neue";
+
+}
+
+
+html {
+    scroll-padding-top: 3.5rem;
+}
+
+body {
+    width: 100%;
+    /* height: 2000px; */
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+header {
+    height: 100vh;
+    width: 100%;
+}
+
+.carousel {
+    overflow-x: hidden;
+}
+
+.carousel-item {
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+
+.carousel-inner {
+    width: 100%;
+    overflow-x: hidden;
+
+}
+
+.navbar {
+    transition: background-color 0.3s ease;
+    
+}
+
+.navbar.scrolled {
+    background-color: #7777;
+
+}
+
+.right-side a {
+    margin-top: 20px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.down-arrow-icon{
+    width: 20px;
+    height: 20px;
+    opacity: 1;
+}
+.right-side a:hover {
+    margin-top: 20px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffff;
+}
+
+.menu-links li {
+    list-style-type: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+
+}
+
+.menu-link a {
+    color: #ffff;
+    top: 60px;
+    font-size: 20px;
+    text-decoration: none;
+}
+.menu-btn{
+    border: none;
+}
+.menu-btn img:hover {
+    border: none;
+}
+
+.menu-list {
+    background-color: #084458;
+    transition: 2s;
+}
+
+.close-btn {
+    filter: brightness(0) invert(1);
+}
+
+.logo img {
+    height: 30px;
+}
+
+.box-container {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    width: 100.8%;
+}
+
+.box {
+    color: white;
+    width: 100%;
+    height: 374px;
+    padding: 50px;
+    padding: 20px;
+    text-align: center;
+
+}
+
+.box-1 {
+    background-color: #073447;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.box-2 {
+    background-color: #073a4f;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.box-3 {
+    background-color: #0b3f54;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.box-4 {
+    background-color: #0f4459;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.box-5 {
+    background-color: #124b61;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.whoweare-btn {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    border-radius: 100px;
+    border: 2px solid #ffff;
+    transition: 0.5s;
+    justify-content: center;
+    align-items: center;
+}
+
+.box a {
+    text-decoration: none;
+}
+
+.box a:hover {
+    text-decoration: none;
+
+}
+
+.whoweare-btn i {
+    color: #ffff;
+}
+
+.whoweare-btn:hover {
+    background-color: #ffff;
+
+}
+
+.whoweare-btn:hover i {
+    color: #000;
+}
+
+.box:hover {
+    background: linear-gradient(180deg, #dd8e44, #de4655);
+    width: 100%;
+    height: 374px;
+}
+
+.box:hover img {
+    filter: brightness(0) invert(1);
+}
+.about-container{
+    width: 100%;
+    display: flex;
+    column-gap: 20px;
+}
+.about-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   
+    
+}
+
+.about-content .about-text-h1 {
+    font-size: 26px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #010101;
+    font-weight: normal;
+    font-style: normal;
+    padding-left: 230px;
+
+}
+
+.about-content .about-text-h2 {
+    font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #010101;
+    font-weight: Bold;
+    padding-left: 230px;
+}
+
+.about-content .about-para {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #010101;
+    font-weight: normal;
+    
+    padding-left: 230px;
+}
+.about-text-h1:before{
+    position: absolute;
+    content: "01.";
+    margin-left: -80px;
+    margin-top: -20px;
+    font-size: 60px;
+    font-family: "Helvetica Neue";
+    color: #fd7e14;
+    font-weight: normal;
+}
+.ecosystem-container{
+    width: 100%;
+    display: flex;
+    
+}
+.whoweare-image img{
+    width: 116.8%;
+}
+.ecosystem-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   }
+   .ecosystem-text-h1{
+    font-size: 26px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #010101;
+    font-weight: normal;
+    font-style: normal;
+    padding-left: 100px;
+   }
+   .ecosystem-text-h2{
+    font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #010101;
+    font-weight: Bold;
+    padding-left: 100px;
+   }
+   .ecosystem-para{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #010101;
+    font-weight: normal;
+    padding-left: 100px;
+    padding-right: 100px;
+   }
+   .ecosystem-text-h1:before{
+    position: absolute;
+    content: "02.";
+    margin-left: -80px;
+    margin-top: -20px;
+    font-size: 60px;
+    font-family: "Helvetica Neue";
+    color: #fd7e14;
+    font-weight: normal;
+}
+.whatwedo-container{
+    width: 100%;
+    display: flex;
+    column-gap: 20px;  
+}
+.whatwedo-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.whatwedo-text-h1{
+    font-size: 26px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #010101;
+    font-weight: normal;
+    font-style: normal;
+    padding-left: 230px;
+}
+.whatwedo-h2{
+    font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #010101;
+    font-weight: Bold;
+    padding-left: 230px;
+}
+.whatwedo-para{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #010101;
+    font-weight: normal;
+    padding-left: 230px;
+    
+}
+.whatwedo-container img{
+    width: 117%;
+}
+.whatwedo-text-h1:before{
+    position: absolute;
+    content: "03.";
+    margin-left: -80px;
+    margin-top: -20px;
+    font-size: 60px;
+    font-family: "Helvetica Neue";
+    color: #fd7e14;
+    font-weight: normal;
+}
